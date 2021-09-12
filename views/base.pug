@@ -1,0 +1,24 @@
+//- layout.pug
+html
+  head
+    title Pali Dance Academy
+    block scripts
+    block style 
+    style 
+        include ../static/base.css
+  body
+    nav#navbar 
+        ul 
+            #logo 
+                a(href="/") 
+                    img(src="/static/img/logo.png")
+                    | PDA 
+            li #[a(href="/") Home] 
+            li #[a(href="/") About] 
+            li #[a(href="/") Services] 
+            li #[a(href="/") Information] 
+            li #[a(href="/contact") Contact Us] 
+    block content
+    
+    footer#footer
+        | Copyright 2021 &nbsp;#[a(href="https://www.riteshkc.com.np", target="_blank") © Ritesh Technologies]

@@ -1,0 +1,57 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js")
+
+block style
+    style 
+        include ../static/style.css
+
+block content
+    section#introSection
+        div  Welcome to Pali's Dance Academy 
+        div.small  Eat Sleep Dance Repeat
+        
+    
+    section#missionSection 
+        h2  Our Mission  
+        section#cardsection 
+            .card
+                h3 Dance Perfection
+                .card-box 
+                    .card-img 
+                        img(src="/static/img/1.png")
+                    
+                    .card-content 
+                        p This is the best dance academy of Nepal 
+            .card
+                h3 Dance to your heart
+                .card-box 
+                    .card-img 
+                        img(src="/static/img/2.png")
+                    
+                    .card-content 
+                        p This is the best dance academy of Nepal
+            .card
+                h3 Expert Dancer 
+                .card-box 
+                    .card-img 
+                        img(src="/static/img/3.png")
+                    
+                    .card-content 
+                        p This is the best dance academy of Nepal
+    
+    section#sponsorsSection 
+        h2  Our Sponsors
+        #sponsors 
+            a(href="https://www.apple.com", target="_blank") 
+                    img(src="/static/img/logo1.png", alt="Sponsor Img", class="spImage")
+            
+            a(href="https://www.microsoft.com/en-us/", target="_blank") 
+                    img(src="/static/img/logo2.png", alt="Sponsor Img", class="spImage")
+            
+            a(href="https://www.hp.com/us-en/home.html", target="_blank") 
+                    img(src="/static/img/logo3.png", alt="Sponsor Img", class="spImage")
+            
+            a(href="https://www.skype.com/en/", target="_blank") 
+                    img(src="/static/img/logo4.png", alt="Sponsor Img", class="spImage")
